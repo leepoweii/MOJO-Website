@@ -1,8 +1,12 @@
 {
+  "introTabLabel": "酒單介紹cn",
+  "introHeading": "歡迎來到 MOJO 調酒吧",
+  "introDescription": "探索我們精緻的調酒選擇。",
   "cocktails": [
     {
       "id": "I",
-      "name": "Pure Love K.K.",
+      "name": "純愛古崗cn",
+      "tabLabel": "I",
       "flavorType": "Sweet & Sour",
       "ingredients": "Marigold / Jasmine Tea / Honey",
       "flavorprofile": {
@@ -20,6 +24,7 @@
     {
       "id": "II",
       "name": "Holy Shit!",
+      "tabLabel": "II",
       "flavorType": "Sweet & Sour",
       "ingredients": "Smoke / Gentian / Cinnamon / Egg white",
       "flavorprofile": {
@@ -37,6 +42,7 @@
     {
       "id": "III",
       "name": "Runaway Peacock",
+      "tabLabel": "III",
       "flavorType": "Sweet & Sour",
       "ingredients": "Grape / Rosemary / Mastiha",
       "flavorprofile": {
@@ -54,6 +60,7 @@
     {
       "id": "IV",
       "name": "Rodenticide 1957",
+      "tabLabel": "IV",
       "flavorType": "Dessert",
       "ingredients": "Cocoa / Taro / Milk / Peanut Candy",
       "flavorprofile": {
@@ -71,6 +78,7 @@
     {
       "id": "V",
       "name": "Bloody Commandos",
+      "tabLabel": "V",
       "flavorType": "Umami",
       "ingredients": "Tomato / Black Vinegar / Chili / KKL",
       "flavorprofile": {
@@ -88,6 +96,7 @@
     {
       "id": "VI",
       "name": "8.6 Miles Apart",
+      "tabLabel": "VI",
       "flavorType": "Sweet & Sour",
       "ingredients": "Mezcal / Rye Whiskey / Mushroom",
       "flavorprofile": {
@@ -105,6 +114,7 @@
     {
       "id": "VII",
       "name": "Pick and Eat",
+      "tabLabel": "VII",
       "flavorType": "Dessert",
       "ingredients": "Ginger / Soy Milk / Almond",
       "flavorprofile": {
@@ -122,6 +132,7 @@
     {
       "id": "VIII",
       "name": "Letters from Nanyang",
+      "tabLabel": "VIII",
       "flavorType": "Bitter Sweet",
       "ingredients": "Geow Yong Tea / Bourbon",
       "flavorprofile": {
@@ -139,6 +150,7 @@
     {
       "id": "IX",
       "name": "Voices from Home",
+      "tabLabel": "IX",
       "flavorType": "Sweet & Sour",
       "ingredients": "Nanyang Herbal Mix / Coconut / Pineapple",
       "flavorprofile": {
