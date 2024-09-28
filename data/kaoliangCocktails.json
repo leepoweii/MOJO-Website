@@ -6,42 +6,40 @@
     },
     "items": [
       {
+        "ID": "I",
         "name": "The Gentleman",
         "ingredients": "58 Kinmen Kaoliang Liquor / Citrus / Lemon / Rosemary",
         "image": "imgs/cocktail1.jpg"
       },
       {
+        "ID": "II",
         "name": "Number Sixteen",
         "ingredients": "58 Kinmen Kaoliang Liquor / Peach / Blood Orange / Mango / Passion Fruit / Pineapple / Lime",
         "image": "imgs/cocktail2.jpg"
       },
       {
+        "ID": "III",
         "name": "Yan Nan Red",
         "ingredients": "58 Kinmen Kaoliang Liquor / Citrus Peel / Quinine / Bitter-sweet",
         "image": "imgs/cocktail3.jpg"
-      }
-    ]
-  },
-  "memory": {
-    "intro": {
-      "title": "Memory in a Glass",
-      "content": "Each cocktail is a reflection of our past memories, allowing you to chase the beauty of dreams in the aroma of the drink."
-    },
-    "items": [
-      {
-        "name": "Dreamy Clouds",
-        "ingredients": "Rum / Peach / Pineapple / Raspberry / Lime / Homemade Lemon Syrup",
-        "image": "imgs/cocktail4.jpg"
       },
       {
-        "name": "Mysterious Perfume",
-        "ingredients": "Bourbon Whiskey / Blueberry / Raspberry / Lemon / Mint",
-        "image": "imgs/cocktail5.jpg"
+        "ID": "IV",
+        "name": "The Gentleman",
+        "ingredients": "58 Kinmen Kaoliang Liquor / Citrus / Lemon / Rosemary",
+        "image": "imgs/cocktail1.jpg"
       },
       {
-        "name": "Wendy's Ex",
-        "ingredients": "Earl Grey Vodka / Plum Liqueur / Tonic Water",
-        "image": "imgs/cocktail6.jpg"
+        "ID": "V",
+        "name": "Number Sixteen",
+        "ingredients": "58 Kinmen Kaoliang Liquor / Peach / Blood Orange / Mango / Passion Fruit / Pineapple / Lime",
+        "image": "imgs/cocktail2.jpg"
+      },
+      {
+        "ID": "VI",
+        "name": "Yan Nan Red",
+        "ingredients": "58 Kinmen Kaoliang Liquor / Citrus Peel / Quinine / Bitter-sweet",
+        "image": "imgs/cocktail3.jpg"
       }
     ]
   }

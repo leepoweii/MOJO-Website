@@ -43,7 +43,7 @@ header {
     background-color: #C93E2E;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px;
     margin: 0 5px;
     cursor: pointer;
     font-size: 16px;
@@ -66,18 +66,17 @@ header {
 
 /* Side Navigation */
 #side-nav {
-    width: 20%; /* Fixed width for the side nav */
+    width: 50px; /* Fixed width for the side nav */
     background-color: #FAF9F6;
     padding: 5px;
     border-radius: 10px;
-    border: 2px solid #3f2e2d;
 }
 
 #side-nav button {
     display: block;
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     background-color: #C93E2E;
     border: none;
     cursor: pointer;

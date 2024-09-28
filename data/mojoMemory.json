@@ -1,0 +1,46 @@
+{
+  "memory": {
+    "intro": {
+      "title": "Memory in a Glass",
+      "content": "Each cocktail is a reflection of our past memories, allowing you to chase the beauty of dreams in the aroma of the drink."
+    },
+    "items": [
+      {
+        "ID": "I",
+        "name": "Dreamy Clouds",
+        "ingredients": "Rum / Peach / Pineapple / Raspberry / Lime / Homemade Lemon Syrup",
+        "image": "imgs/cocktail4.jpg"
+      },
+      {
+        "ID": "II",
+        "name": "Mysterious Perfume",
+        "ingredients": "Bourbon Whiskey / Blueberry / Raspberry / Lemon / Mint",
+        "image": "imgs/cocktail5.jpg"
+      },
+      {
+        "ID": "III",
+        "name": "Wendy's Ex",
+        "ingredients": "Earl Grey Vodka / Plum Liqueur / Tonic Water",
+        "image": "imgs/cocktail6.jpg"
+      },
+      {
+        "ID": "IV",
+        "name": "Dreamy Clouds",
+        "ingredients": "Rum / Peach / Pineapple / Raspberry / Lime / Homemade Lemon Syrup",
+        "image": "imgs/cocktail4.jpg"
+      },
+      {
+        "ID": "V",
+        "name": "Mysterious Perfume",
+        "ingredients": "Bourbon Whiskey / Blueberry / Raspberry / Lemon / Mint",
+        "image": "imgs/cocktail5.jpg"
+      },
+      {
+        "ID": "VI",
+        "name": "Wendy's Ex",
+        "ingredients": "Earl Grey Vodka / Plum Liqueur / Tonic Water",
+        "image": "imgs/cocktail6.jpg"
+      }
+    ]
+  }
+}
