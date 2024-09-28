@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOJO Cocktail Bar Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="logo">MOJO Cocktail Bar</div>
+        <nav id="big-nav">
+            <button onclick="loadCategory('kinmenJourney')">Kinmen Journey</button>
+            <button onclick="loadCategory('mojoSignature')">MOJO Signature</button>
+            <button onclick="loadCategory('nonAlcoholic')">Non-Alcoholic</button>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <div id="main-content">
+        <!-- Side Navigation (Subcategories) -->
+        <aside id="side-nav">
+            <!-- Subcategory buttons will be dynamically inserted here -->
+        </aside>
+
+        <!-- Main Content Display Area -->
+        <section id="items-content">
+            <div id="intro-content">
+                <!-- Introduction content will be dynamically inserted here -->
+            </div>
+            <div id="item-details">
+                <!-- Item details will be dynamically inserted here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript file for dynamic data handling -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOJO Cocktail Bar - Menu</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="../assets/logo/logo.png" alt="MOJO Logo" class="logo-img">
+        <!-- Category Switcher -->
+        <div class="category-switcher">
+            <button class="category-button" onclick="switchCategory('kinmenJourney')">Kinmen Journey</button>
+            <button class="category-button" onclick="switchCategory('mojoSignature')">MOJO Signature</button>
+            <button class="category-button" onclick="switchCategory('nonAlcoholic')">Non-Alcoholic</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Navigation Column -->
+        <aside class="nav-column">
+            <!-- Dynamic navigation buttons will be inserted here -->
+            <div id="dynamic-nav"></div>
+        </aside>
+
+        <!-- Content Column -->
+        <section class="content-column">
+            <!-- Dynamic content will be displayed here -->
+            <div id="dynamic-content">
+                <h2>Welcome to MOJO's Menu</h2>
+                <p>Select a category to view more details.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-warning">
+        <img src="../assets/footer-warning.png" alt="Warning: Drink Responsibly" class="footer-warning-icon">
+        <p>&copy; 2024 MOJO Cocktail Bar</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "mocktails": {
+    "intro": {
+      "title": "Non-Alcoholic Mocktails",
+      "content": "Enjoy our carefully crafted mocktails that deliver all the flavor without the buzz."
+    },
+    "items": [
+      {
+        "name": "The Gentleman",
+        "ingredients": "Citrus / Lemon / Rosemary / Honey Syrup / Sparkling Water",
+        "image": "imgs/mocktail1.jpg"
+      },
+      {
+        "name": "Tropical Sunshine",
+        "ingredients": "Peach / Blood Orange / Mango / Passion Fruit / Pineapple / Lime Juice",
+        "image": "imgs/mocktail2.jpg"
+      },
+      {
+        "name": "Citrus Cooler",
+        "ingredients": "Citrus Peel / Quinine / Tonic Water / Orange Bitters",
+        "image": "imgs/mocktail3.jpg"
+      }
+    ]
+  },
+  "softDrinks": {
+    "intro": {
+      "title": "Soft Drinks",
+      "content": "A selection of refreshing non-alcoholic beverages for every taste."
+    },
+    "items": [
+      {
+        "name": "Dreamy Clouds",
+        "ingredients": "Peach / Pineapple / Raspberry / Lime / Soda Water",
+        "image": "imgs/softdrink1.jpg"
+      },
+      {
+        "name": "Berry Breeze",
+        "ingredients": "Blueberry / Raspberry / Lemon / Mint / Soda Water",
+        "image": "imgs/softdrink2.jpg"
+      },
+      {
+        "name": "Earl Grey Fizz",
+        "ingredients": "Earl Grey Tea / Plum Syrup / Tonic Water",
+        "image": "imgs/softdrink3.jpg"
+      }
+    ]
+  }
+}

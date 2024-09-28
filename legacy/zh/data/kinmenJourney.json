@@ -1,0 +1,169 @@
+{
+  "introTabLabel": "O",
+  "introHeading": "Welcome to MOJO",
+  "introDescription": "<p>Nestled in the heart of Kinmen's vibrant nightlife, MOJO is set within a century-old ancestral hall, offering you a unique gateway into the island’s rich history. Each cocktail is meticulously crafted, not just as a drink, but as a story—capturing the essence of Kinmen’s culture and past.</p><p>Kinmen is renowned for its liquor heritage, and at MOJO, we celebrate this tradition by connecting people through our spirits. Every drink on our menu serves as a bridge, linking you to the island's history while forging bonds between locals and travelers from around the world.</p><p>Let our cocktails guide you through the charming streets of Houpu, offering a taste of Kinmen's unique spirit. As you explore our menu, you’ll find each drink paired with a postcard that reflects its story—your personal souvenir of this cultural journey. <em>(English version coming soon!)</em></p><p>Choose your favorite cocktail, write a message for a friend or yourself, and hand the postcard back to us. We’ll send it out every Monday afternoon, sharing your Kinmen experience far and wide. MOJO is more than just a bar; it's a bridge connecting travelers to the heart of Kinmen.</p><p>Now, explore the tabs above and join us on an unforgettable adventure.</p>",
+  "cocktails": [
+    {
+      "id": "I",
+      "name": "Pure Love K.K.",
+      "tabLabel": "I",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Marigold/ Jasmine Tea/ Honey",
+      "flavorprofile": {
+        "sour": 3,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 1,
+        "flavorIntensity": 2
+      },
+      "alcoholContent": "11.97%",
+      "alcoholVolume": 2.5,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>Gugang Village in Kinmen is home to the picturesque Gugang Lake, nestled amidst green hills and sparkling waters.</p><p>In the past, the lake was known as a romantic rendezvous for young men and women of Kinmen. An old newspaper article describing the scenery of Gugang Lake once said:</p><p><em>'If it’s a bright moonlit night, bring your girlfriend to row on Gugang Lake. Even if you don’t speak sweet words, you’ll still experience a silent connection and a mutual understanding without words.'</em></p><p>In many literary works from Kinmen, the lake's beautiful scenery often ignites love between the male and female protagonists.</p>"
+    },
+    {
+      "id": "II",
+      "name": "Holy Shit!",
+      "tabLabel": "II",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Smoke/ Gentian/ Cinnamon/ Egg white",
+      "flavorprofile": {
+        "sour": 4,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 3,
+        "flavorIntensity": 4
+      },
+      "alcoholContent": "12.36%",
+      "alcoholVolume": 2,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>It is said that during the Ming Dynasty, a eunuch named Zhang lived in Kinmen, while a queen resided across the strait in Weitou. The emperor granted the queen’s family a palace-style ancestral home, but it was built on the local 'horseshoe crab hole.'</p><p>As a result, the horseshoe crab kept gasping for breath, facing Kinmen with its nostrils. This caused constant wind and sand, making the place uninhabitable.</p><p>Zhang the eunuch suggested removing three tiles from the ancestral home to allow the horseshoe crab to breathe, which would solve the problem. However, as a eunuch, he could not challenge the queen.</p><p>It wasn't until one day, when the emperor went on a trip and left him in power for seven days, that he ordered the tiles to be removed.</p><p>Afterward, the winds and sands of Kinmen calmed down, making it suitable for living.</p>"
+    },
+    {
+      "id": "III",
+      "name": "Runaway Peacock",
+      "tabLabel": "III",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Grape/ Rosemary/ Mastiha",
+      "flavorprofile": {
+        "sour": 3,
+        "sweet": 4,
+        "bitter": 0,
+        "alcoholFeel": 1.5,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "9.48%",
+      "alcoholVolume": 1.5,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>In 1999, Typhoon Dan swept through Kinmen, causing several peacocks to escape from their destroyed enclosures. A few years later, wild peacock families began to appear in Kinmen.</p><p>Initially, people welcomed the peacocks and nicknamed them 'Little Phoenixes,' believing they would bring good luck. However, due to the lack of natural predators in Kinmen, the peacock population rapidly grew, and abandoned military camps became their habitats.</p><p>Now, peacocks are everywhere in Kinmen, raising concerns among the residents. To control the population, the Kinmen County Government issued a bounty, offering a reward of 600 NTD for capturing a peacock.</p>"
+    },
+    {
+      "id": "IV",
+      "name": "Rodenticide 1957",
+      "tabLabel": "IV",
+      "flavorType": "Dessert",
+      "ingredients": "Cocoa/ Taro/ Milk/ Peanut Candy",
+      "flavorprofile": {
+        "sour": 0,
+        "sweet": 4,
+        "bitter": 1,
+        "alcoholFeel": 3.5,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "12.00%",
+      "alcoholVolume": 2.5,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>In the 1940s and 1950s, plague outbreaks occurred multiple times in Kinmen. After the National Army stationed in Kinmen, they established the 'Plague Prevention Office' to prevent the plague from affecting the soldiers’ morale.</p><p>Aside from regular vaccinations and spraying disinfectants for both soldiers and civilians, they introduced the latest rodenticide, 'Zinc Phosphide,' in 1957. This gray-black powder was mixed with cooked taro to lure rats.</p><p>Although the military successfully eradicated the plague, the prevention measures became part of military mobilization, often creating extra burdens for the residents. For example, locals were required to regularly submit rat tails to prove the effectiveness of the rat eradication campaign.</p>"
+    },
+    {
+      "id": "V",
+      "name": "Bloody Commandos",
+      "tabLabel": "V",
+      "flavorType": "Umami",
+      "ingredients": "Tomato/ Black Vinegar/ Chili/ KKL",
+      "flavorprofile": {
+        "sour": 2,
+        "sweet": 0,
+        "bitter": 0,
+        "alcoholFeel": 3,
+        "flavorIntensity": 4
+      },
+      "alcoholContent": "11.90%",
+      "alcoholVolume": 2.5,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>Kinmen is close to mainland China, so it’s not uncommon for enemy scouts to infiltrate the shores. It is said that once, a guard at a coastal defense base fell asleep and failed to detect an infiltrating enemy, leading to the entire company being killed in their sleep.</p><p>Afterward, the camp was sealed off by the military, but residents still heard marching at night. Curious locals ventured into the camp, only to find headless soldiers drilling.</p><p>This seemingly baseless legend may stem from the high-pressure environment of Kinmen's frontline. In Kinmen, where lights are controlled at night, guards often hear the sound of waves without seeing anything, easily falling into fear. This might explain the spread of water ghost legends.</p>"
+    },
+    {
+      "id": "VI",
+      "name": "8.6 Miles Apart",
+      "tabLabel": "VI",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Mezcal/ Rye Whiskey/ Mushroom",
+      "flavorprofile": {
+        "sour": 1,
+        "sweet": 1,
+        "bitter": 0,
+        "alcoholFeel": 4,
+        "flavorIntensity": 4
+      },
+      "alcoholContent": "20.30%",
+      "alcoholVolume": 2.5,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>During the Prohibition era in the United States, people went beyond the 3-nautical-mile limit to drink, avoiding detection. This prompted law enforcement to extend the enforcement zone to 12 nautical miles.</p><p>However, during the first United Nations Conference on the Law of the Sea in 1958, no consensus was reached on the width of territorial waters. That same year, the 823 Artillery Bombardment erupted in Kinmen. Beijing declared China's territorial waters to be 12 nautical miles, prohibiting foreign ships from entering without cause, targeting U.S. naval ships escorting Nationalist forces.</p><p>The distance between Kinmen and Xiamen's 'mini three links' wharf is about 8.6 nautical miles, falling within the 3 to 12 nautical mile range. Today, it serves as a vital channel for cross-strait exchanges, symbolizing the complexity of cross-strait issues in Kinmen.</p>"
+    },
+    {
+      "id": "VII",
+      "name": "Pick and Eat",
+      "tabLabel": "VII",
+      "flavorType": "Dessert",
+      "ingredients": "Ginger/ Soy Milk/ Almond",
+      "flavorprofile": {
+        "sour": 0,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 2,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "10.26%",
+      "alcoholVolume": 2,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>Kinmen used to be a key site for psychological warfare, with 'propaganda balloons' being one of the strategies. These balloons not only carried leaflets but also transported supplies such as food, canned goods, medicines, and cigarettes.</p><p>At one point, relief food packages even had 'Pick and Eat' written on them, which now seems quite amusing. The launch of these balloons was often timed with guest visits or holidays.</p><p>For example, during the Mid-Autumn Festival, they launched mooncake balloons, and during Christian visits, they sent off 'Bible balloons.' Thus, the supplies transported by the balloons and the launch process itself became ritualistic political propaganda.</p>"
+    },
+    {
+      "id": "VIII",
+      "name": "Letters from Nanyang",
+      "tabLabel": "VIII",
+      "flavorType": "Bitter-sweet",
+      "ingredients": "Geow Yong Tea/ Bourbon",
+      "flavorprofile": {
+        "sour": 0,
+        "sweet": 2,
+        "bitter": 2,
+        "alcoholFeel": 4,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "22.50%",
+      "alcoholVolume": 2,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>Life in Kinmen was tough in the past, forcing many young people to work in Southeast Asia, known as 'journeying abroad' or 'heading to Nanyang.' Those who ventured abroad were called 'fan ke (migrant workers).' They would send their earnings and letters back home, which became the 'life-saving money' for countless Kinmen families and the only link between separated families.</p><p>It is said that when these guests returned home via Hong Kong, they often bought 'Geow Yong Tea,' a popular tea in Kinmen tea shops. While a few succeeded in amassing wealth, most toiled abroad for a lifetime, with some even passing away in foreign lands, never to return to Kinmen.</p>"
+    },
+    {
+      "id": "IX",
+      "name": "Voices from Home",
+      "tabLabel": "IX",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Nanyang Herbal Mix/ Coconut/ Pineapple",
+      "flavorprofile": {
+        "sour": 4,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 1.5,
+        "flavorIntensity": 3.5
+      },
+      "alcoholContent": "12.44%",
+      "alcoholVolume": 2,
+      "storyHeading": "Story Behind:",
+      "storyBehind": "<p>Life in Kinmen was very difficult in the past, and many young people had to travel far to work in Southeast Asia, known as 'journeying abroad' or 'heading to Nanyang.' Some of them struggled for years abroad, unable to earn enough money to return to Kinmen, gradually losing their connection with their homeland.</p><p>To maintain the bond with these 'fan ke (migrant workers),' Kinmen at that time had a publication called 'Qiao Kan (Overseas Chinese Journal),' which specialized in publishing news and correspondence from family and friends, sending it to Southeast Asia.</p><p>Imagine how excited and nostalgic they must have felt upon receiving the newsletter in a foreign land, reading the latest news from their hometown!</p>"
+    }
+  ]
+}
