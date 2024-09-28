@@ -1,9 +1,9 @@
 {
-  "introTitle": "介紹",
+  "introTitle": "Intro",
   "tabs": {
-    "kaoliang": "Kaoliang",
-    "memory": "夢酒回憶",
-    "nonAlcoholic": "無酒精"
+    "kaoliang": "Kaoliang</br>Specials",
+    "memory": "MOJO</br>Memories",
+    "nonAlcoholic": "Sober</br>Today"
   },
   "virtualBartenderTitle": "虛擬調酒師",
   "virtualBartenderDescription": "不知如何選擇？試試我們的虛擬調酒師，讓他為您推薦一杯適合您的調酒！",

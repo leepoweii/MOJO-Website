@@ -3,46 +3,22 @@ let currentLanguage = "zh_TW"; // Default language set to Traditional Chinese
 let contentData = {};
 let cocktailsData = {};
 
-// Show the agreement modal on page load
-window.onload = () => {
-  document.getElementById("agreement").style.display = "flex";
-};
-
-// Handle agreement acceptance
-document.getElementById("agreement-accept").addEventListener("click", () => {
-  document.getElementById("agreement").style.display = "none";
-});
-
 // Load content and cocktail data based on the selected language
 async function loadContent() {
   try {
     console.log(`Loading content for language: ${currentLanguage}`);
 
     // Load content JSON file for the current language
-    const contentFile = `data/${currentLanguage}/content_${currentLanguage}.json`;
-    console.log(`Fetching content from: ${contentFile}`);
-    const contentResponse = await fetch(contentFile);
-
-    if (!contentResponse.ok) {
-      throw new Error(`Failed to fetch content: ${contentResponse.statusText}`);
-    }
-
-    contentData = await contentResponse.json();
-    console.log("Content data loaded:", contentData);
+    await fetchContent(
+      `data/${currentLanguage}/content_${currentLanguage}.json`,
+      "content"
+    );
 
     // Load cocktails JSON file for the current language
-    const cocktailsFile = `data/${currentLanguage}/mojoSignature_${currentLanguage}.json`;
-    console.log(`Fetching cocktails from: ${cocktailsFile}`);
-    const cocktailsResponse = await fetch(cocktailsFile);
-
-    if (!cocktailsResponse.ok) {
-      throw new Error(
-        `Failed to fetch cocktails: ${cocktailsResponse.statusText}`
-      );
-    }
-
-    cocktailsData = await cocktailsResponse.json();
-    console.log("Cocktails data loaded:", cocktailsData);
+    await fetchContent(
+      `data/${currentLanguage}/mojoSignature_${currentLanguage}.json`,
+      "cocktails"
+    );
 
     // Initialize with the default tab (e.g., "kaoliang")
     updateIntro("kaoliang");
@@ -54,29 +30,54 @@ async function loadContent() {
   }
 }
 
+// Generic fetch function for content and cocktail data
+async function fetchContent(url, type) {
+  console.log(`Fetching ${type} from: ${url}`);
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${type}: ${response.statusText}`);
+  }
+
+  const data = await response.json();
+  console.log(`${type} data loaded:`, data);
+
+  if (type === "content") {
+    contentData = data;
+  } else if (type === "cocktails") {
+    cocktailsData = data;
+  }
+}
+
 // Function to update the introduction text based on the selected tab
 function updateIntro(tabKey) {
-  if (cocktailsData[tabKey] && cocktailsData[tabKey].intro) {
-    const introTitle = cocktailsData[tabKey].intro.title;
-    const introContent = cocktailsData[tabKey].intro.content;
+  const tabMapping = {
+    kaoliang: "kaoliang",
+    memory: "memory",
+    "non-alcoholic": "nonAlcoholic",
+  };
 
-    document.querySelector("#intro-section h2").innerText = introTitle;
-    document.querySelector("#intro-section p").innerText = introContent;
+  const jsonKey = tabMapping[tabKey];
+
+  if (cocktailsData[jsonKey] && cocktailsData[jsonKey].intro) {
+    const { title, content } = cocktailsData[jsonKey].intro;
+    document.querySelector("#intro-section h2").innerText = title || "";
+    document.querySelector("#intro-section p").innerText = content || "";
   } else {
-    console.error("Introduction data is not properly loaded.");
+    console.error(`Introduction data for '${tabKey}' is not properly loaded.`);
   }
 }
 
 // Function to update the tab titles based on the current language
 function updateTabs() {
   if (contentData.tabs) {
-    document.querySelector('.tab-link[data-lang-key="kaoliang"]').innerText =
+    document.querySelector('.tab-link[data-lang-key="kaoliang"]').innerHTML =
       contentData.tabs.kaoliang;
-    document.querySelector('.tab-link[data-lang-key="memory"]').innerText =
+    document.querySelector('.tab-link[data-lang-key="memory"]').innerHTML =
       contentData.tabs.memory;
     document.querySelector(
       '.tab-link[data-lang-key="nonAlcoholic"]'
-    ).innerText = contentData.tabs.nonAlcoholic;
+    ).innerHTML = contentData.tabs.nonAlcoholic;
   } else {
     console.error("Tab titles are not properly loaded.");
   }
@@ -98,16 +99,18 @@ function populateCocktailSection(sectionId, cocktails) {
   const section = document.getElementById(sectionId);
   section.innerHTML = ""; // Clear existing content
 
+  let contentHTML = "";
   cocktails.forEach((cocktail) => {
-    section.innerHTML += `
-            <div class="cocktail">
-                <div class="cocktail-content">
-                    <h2>${cocktail.name}</h2>
-                    <p>${cocktail.ingredients}</p>
-                </div>
-            </div>
-        `;
+    contentHTML += `
+      <div class="cocktail">
+        <div class="cocktail-content">
+          <h2>${cocktail.name}</h2>
+          <p>${cocktail.ingredients}</p>
+        </div>
+      </div>
+    `;
   });
+  section.innerHTML = contentHTML;
 }
 
 // Function to handle tab switching
@@ -127,8 +130,22 @@ function openTab(event, tabName) {
   event.currentTarget.classList.add("active");
 
   // Update the introduction content based on the selected tab
-  const tabKey = tabName.replace("-content", ""); // Remove '-content' to match JSON keys
+  const tabKey = tabName.replace("-content", "");
   updateIntro(tabKey);
+}
+
+// Function to switch the language and reload content
+function switchLanguage(lang) {
+  currentLanguage = lang;
+  console.log(`Switching to language: ${currentLanguage}`);
+  loadContent();
+}
+
+// Function to display an error message
+function displayErrorMessage(message) {
+  const errorMessage = document.getElementById("error-message");
+  errorMessage.style.display = "block";
+  errorMessage.innerText = message;
 }
 
 // Event listeners for language switch buttons
@@ -142,27 +159,5 @@ document
   .getElementById("lang-zh-cn")
   .addEventListener("click", () => switchLanguage("zh_CN"));
 
-// Function to switch the language and reload content
-function switchLanguage(lang) {
-  currentLanguage = lang;
-  contentData = {}; // Clear existing content data to load the new language file
-  cocktailsData = {}; // Clear existing cocktail data to load the new language file
-  console.log(`Switching to language: ${currentLanguage}`);
-  loadContent();
-}
-
-// Function to display an error message
-function displayErrorMessage(message) {
-  const errorMessage = document.getElementById("error-message");
-  errorMessage.style.display = "block";
-  errorMessage.innerText = message;
-}
-
-// Load the default language ('zh_TW') and cocktail data on page load
-window.onload = () => {
-  document.getElementById("agreement-modal").style.display = "flex";
-  document.getElementById("agreement-accept").addEventListener("click", () => {
-    document.getElementById("agreement-modal").style.display = "none";
-    switchLanguage("zh_TW"); // Set default language to 'zh_TW'
-  });
-};
+// Initial content load
+loadContent();

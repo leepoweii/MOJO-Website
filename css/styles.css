@@ -57,6 +57,8 @@ h1 {
     white-space: nowrap; /* Prevents text from wrapping */
 }
 
+
+
 /* Agreement Overlay */
 .agreement-overlay {
     position: fixed;
@@ -126,8 +128,6 @@ main {
 
 /* Introduction Section */
 #intro-section {
-    background-color: #faf9f6;
-    padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
 }
@@ -169,9 +169,7 @@ main {
 .tab-content {
     display: none;
     padding: 20px;
-    border: 1px solid #3f2e2d;
     border-radius: 10px;
-    background-color: #faf9f6;
     margin-top: 20px;
     margin-bottom: 20%;
 }
@@ -186,7 +184,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #FAF9F6;
     border: 2px solid #3f2e2d;
     padding: 15px;
     border-radius: 10px;
@@ -260,8 +258,8 @@ main {
         font-size: 18px;
     }
 
-    .cocktail-content p {
-        font-size: 12px;
+    p {
+        font-size: 16px;
     }
 
     .cocktail img {
