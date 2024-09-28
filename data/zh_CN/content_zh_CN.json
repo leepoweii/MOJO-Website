@@ -1,0 +1,23 @@
+{
+  "introTitle": "介紹",
+  "tabs": {
+    "kaoliang": "高粱調酒",
+    "memory": "夢酒回憶",
+    "nonAlcoholic": "無酒精"
+  },
+  "virtualBartenderTitle": "虛擬調酒師",
+  "virtualBartenderDescription": "不知如何選擇？試試我們的虛擬調酒師，讓他為您推薦一杯適合您的調酒！",
+  "tryNowButton": "點擊這裡開始",
+  "footerWarning": "請理性飲酒。飲酒僅限於法定飲酒年齡的人士。",
+  "ageVerification": {
+    "title": "年齡驗證",
+    "description": "您必須達到法定飲酒年齡才能進入此網站。",
+    "confirmButton": "我已達到法定年齡"
+  },
+  "socialMedia": {
+    "followUs": "追蹤我們"
+  },
+  "cocktailGrid": {
+    "noResults": "未找到調酒。"
+  }
+}
