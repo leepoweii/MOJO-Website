@@ -1,163 +1,72 @@
-// Global variables
-let currentLanguage = "zh_TW"; // Default language set to Traditional Chinese
-let contentData = {};
-let cocktailsData = {};
-
-// Load content and cocktail data based on the selected language
-async function loadContent() {
-  try {
-    console.log(`Loading content for language: ${currentLanguage}`);
-
-    // Load content JSON file for the current language
-    await fetchContent(
-      `data/${currentLanguage}/content_${currentLanguage}.json`,
-      "content"
-    );
-
-    // Load cocktails JSON file for the current language
-    await fetchContent(
-      `data/${currentLanguage}/mojoSignature_${currentLanguage}.json`,
-      "cocktails"
-    );
-
-    // Initialize with the default tab (e.g., "kaoliang")
-    updateIntro("kaoliang");
-    updateCocktailSections();
-    updateTabs();
-  } catch (error) {
-    console.error("Error loading content:", error);
-    displayErrorMessage(`Failed to load content: ${error.message}`);
-  }
-}
-
-// Generic fetch function for content and cocktail data
-async function fetchContent(url, type) {
-  console.log(`Fetching ${type} from: ${url}`);
-  const response = await fetch(url);
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${type}: ${response.statusText}`);
-  }
-
-  const data = await response.json();
-  console.log(`${type} data loaded:`, data);
-
-  if (type === "content") {
-    contentData = data;
-  } else if (type === "cocktails") {
-    cocktailsData = data;
-  }
-}
-
-// Function to update the introduction text based on the selected tab
-function updateIntro(tabKey) {
-  const tabMapping = {
-    kaoliang: "kaoliang",
-    memory: "memory",
-    "non-alcoholic": "nonAlcoholic",
-  };
-
-  const jsonKey = tabMapping[tabKey];
-
-  if (cocktailsData[jsonKey] && cocktailsData[jsonKey].intro) {
-    const { title, content } = cocktailsData[jsonKey].intro;
-    document.querySelector("#intro-section h2").innerText = title || "";
-    document.querySelector("#intro-section p").innerText = content || "";
-  } else {
-    console.error(`Introduction data for '${tabKey}' is not properly loaded.`);
-  }
-}
-
-// Function to update the tab titles based on the current language
-function updateTabs() {
-  if (contentData.tabs) {
-    document.querySelector('.tab-link[data-lang-key="kaoliang"]').innerHTML =
-      contentData.tabs.kaoliang;
-    document.querySelector('.tab-link[data-lang-key="memory"]').innerHTML =
-      contentData.tabs.memory;
-    document.querySelector(
-      '.tab-link[data-lang-key="nonAlcoholic"]'
-    ).innerHTML = contentData.tabs.nonAlcoholic;
-  } else {
-    console.error("Tab titles are not properly loaded.");
-  }
-}
-
-// Populate the cocktail sections
-function updateCocktailSections() {
-  populateCocktailSection("kaoliang-content", cocktailsData.kaoliang.cocktails);
-  populateCocktailSection("memory-content", cocktailsData.memory.cocktails);
-  populateCocktailSection(
-    "non-alcoholic-content",
-    cocktailsData.nonAlcoholic.cocktails
-  );
-}
-
-// Function to populate a cocktail section with content
-function populateCocktailSection(sectionId, cocktails) {
-  console.log(`Populating section: ${sectionId}`, cocktails);
-  const section = document.getElementById(sectionId);
-  section.innerHTML = ""; // Clear existing content
-
-  let contentHTML = "";
-  cocktails.forEach((cocktail) => {
-    contentHTML += `
-      <div class="cocktail">
-        <div class="cocktail-content">
-          <h2>${cocktail.name}</h2>
-          <p>${cocktail.ingredients}</p>
-        </div>
-      </div>
-    `;
-  });
-  section.innerHTML = contentHTML;
-}
-
-// Function to handle tab switching
-function openTab(event, tabName) {
+// Function to open the selected tab and hide others
+function openTab(event, contentId) {
   // Hide all tab contents
-  document
-    .querySelectorAll(".tab-content")
-    .forEach((content) => (content.style.display = "none"));
+  document.querySelectorAll(".tab-content").forEach((section) => {
+    section.style.display = "none";
+  });
 
   // Remove 'active' class from all tab links
-  document
-    .querySelectorAll(".tab-link")
-    .forEach((link) => link.classList.remove("active"));
+  document.querySelectorAll(".tab-link").forEach((link) => {
+    link.classList.remove("active");
+  });
 
-  // Show the selected tab content and set the clicked tab link as active
-  document.getElementById(tabName).style.display = "block";
+  // Show the selected tab content
+  document.getElementById(contentId).style.display = "block";
   event.currentTarget.classList.add("active");
-
-  // Update the introduction content based on the selected tab
-  const tabKey = tabName.replace("-content", "");
-  updateIntro(tabKey);
 }
 
-// Function to switch the language and reload content
-function switchLanguage(lang) {
-  currentLanguage = lang;
-  console.log(`Switching to language: ${currentLanguage}`);
-  loadContent();
+// Populate the cocktail data into their respective sections
+function populateCocktailData(cocktails) {
+  cocktails.forEach((cocktail) => {
+    const section = document.getElementById(`${cocktail.id}-content`);
+    if (section) {
+      section.innerHTML = `
+              <h2>${cocktail.name}</h2>
+              <p>${cocktail.flavorType}</p>
+              <p><strong>Main Flavor:</strong> ${cocktail.ingredients}</p>
+              <p><strong>ABV:</strong> ${cocktail.alcoholContent}</p>
+              <p><strong>Story Behind:</strong> ${cocktail.storyBehind}</p>
+          `;
+    }
+  });
+}
+// No picture first <img src="${cocktail.image}" alt="${cocktail.name}" class="cocktail-img">
+
+// Fetch JSON data from the specified file
+function loadCocktailData(languageCode = "en") {
+  const jsonFilePath = `data/${languageCode}/cocktailData_${languageCode}.json`;
+
+  fetch(jsonFilePath)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok " + response.statusText);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      populateCocktailData(data.cocktails);
+      openTab(event, "intro-content"); // Open the introduction tab by default
+    })
+    .catch((error) => {
+      console.error("Error fetching the cocktail data:", error);
+      document.getElementById("error-message").textContent =
+        "Failed to load cocktail data.";
+      document.getElementById("error-message").style.display = "block";
+    });
 }
 
-// Function to display an error message
-function displayErrorMessage(message) {
-  const errorMessage = document.getElementById("error-message");
-  errorMessage.style.display = "block";
-  errorMessage.innerText = message;
-}
+// Initialize the page content
+document.addEventListener("DOMContentLoaded", () => {
+  loadCocktailData(); // Load default language (English) on page load
 
-// Event listeners for language switch buttons
-document
-  .getElementById("lang-zh-tw")
-  .addEventListener("click", () => switchLanguage("zh_TW"));
-document
-  .getElementById("lang-en")
-  .addEventListener("click", () => switchLanguage("en"));
-document
-  .getElementById("lang-zh-cn")
-  .addEventListener("click", () => switchLanguage("zh_CN"));
-
-// Initial content load
-loadContent();
+  // Add event listeners for language switcher buttons
+  document
+    .getElementById("lang-zh-tw")
+    .addEventListener("click", () => loadCocktailData("zh_TW"));
+  document
+    .getElementById("lang-zh-cn")
+    .addEventListener("click", () => loadCocktailData("zh_CN"));
+  document
+    .getElementById("lang-en")
+    .addEventListener("click", () => loadCocktailData("en"));
+});

@@ -190,6 +190,9 @@ main {
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: center;
+    width: auto; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflow to maintain card size */
 }
 
 .cocktail-content h2 {

@@ -23,19 +23,14 @@
         <!-- Tabs Navigation -->
         <div class="tabs">
             <button class="tab-link active" data-key="intro" onclick="openTab(event, 'intro-content')">酒單介紹</button>
-            <button class="tab-link" data-key="I" onclick="openTab(event, 'I-content')">純愛古崗ㄅ</button>
+            <button class="tab-link" data-key="I" onclick="openTab(event, 'I-content')">純愛古崗</button>
             <button class="tab-link" data-key="II" onclick="openTab(event, 'II-content')">鱟裡血</button>
-            <button class="tab-link" data-key="III" onclick="openTab(event, 'III-content')">鱟裡血</button>
-            <button class="tab-link" data-key="IV" onclick="openTab(event, 'IV-content')">鱟裡血</button>
-            <button class="tab-link" data-key="V" onclick="openTab(event, 'V-content')">鱟裡血</button>
-            <button class="tab-link" data-key="VI" onclick="openTab(event, 'VI-content')">鱟裡血</button>
-            <button class="tab-link" data-key="VII" onclick="openTab(event, 'VII-content')">鱟裡血</button>
-            <button class="tab-link" data-key="VIII" onclick="openTab(event, 'VIII-content')">鱟裡血</button>
-            <button class="tab-link" data-key="IX" onclick="openTab(event, 'IX-content')">鱟裡血</button>
+            <!-- Add more buttons for other cocktails -->
         </div>
         
         <!-- Tab Contents -->
         <section id="intro-content" class="tab-content active">
+            <!-- Introduction content -->
             <h2>Welcome to MOJO Cocktail Bar</h2>
             <p>Explore our exquisite cocktail selection.</p>
         </section>
@@ -43,13 +38,6 @@
         <!-- Dynamic Content Sections for Cocktails -->
         <section id="I-content" class="tab-content"></section>
         <section id="II-content" class="tab-content"></section>
-        <section id="III-content" class="tab-content"></section>
-        <section id="IV-content" class="tab-content"></section>
-        <section id="V-content" class="tab-content"></section>
-        <section id="VI-content" class="tab-content"></section>
-        <section id="VII-content" class="tab-content"></section>
-        <section id="VIII-content" class="tab-content"></section>
-        <section id="IX-content" class="tab-content"></section>
         <!-- Add more sections for other cocktails -->
 
         <!-- Error Message Section (Hidden by Default) -->
@@ -62,6 +50,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/cocktailData.js"></script> <!-- Contains the JSON data -->
     <script src="js/main.js"></script> <!-- Main JS file to handle tab switching and data rendering -->
 </body>
 </html>

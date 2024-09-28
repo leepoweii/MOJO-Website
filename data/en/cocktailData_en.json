@@ -1,0 +1,157 @@
+{
+  "cocktails": [
+    {
+      "id": "I",
+      "name": "Pure Love K.K.",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Marigold / Jasmine Tea / Honey",
+      "flavorprofile": {
+        "sour": 3,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 1,
+        "flavorIntensity": 2
+      },
+      "alcoholContent": "11.97%",
+      "alcoholVolume": 2.5,
+      "image": "images/cocktail1.jpg",
+      "storyBehind": "A refreshing blend inspired by the golden fields of Kinmen. Pure Love K.K. captures the essence of local flavors."
+    },
+    {
+      "id": "II",
+      "name": "Holy Shit!",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Smoke / Gentian / Cinnamon / Egg white",
+      "flavorprofile": {
+        "sour": 4,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 3,
+        "flavorIntensity": 4
+      },
+      "alcoholContent": "12.36%",
+      "alcoholVolume": 2,
+      "image": "images/cocktail2.jpg",
+      "storyBehind": "Inspired by the bold flavors and mysterious aura of Kinmen's rich history."
+    },
+    {
+      "id": "III",
+      "name": "Runaway Peacock",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Grape / Rosemary / Mastiha",
+      "flavorprofile": {
+        "sour": 3,
+        "sweet": 4,
+        "bitter": 0,
+        "alcoholFeel": 1.5,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "9.48%",
+      "alcoholVolume": 1.5,
+      "image": "images/cocktail3.jpg",
+      "storyBehind": "Runaway Peacock captures the vibrant essence of Kinmen's flora, offering a blend of fruity and herbal notes."
+    },
+    {
+      "id": "IV",
+      "name": "Rodenticide 1957",
+      "flavorType": "Dessert",
+      "ingredients": "Cocoa / Taro / Milk / Peanut Candy",
+      "flavorprofile": {
+        "sour": 0,
+        "sweet": 4,
+        "bitter": 1,
+        "alcoholFeel": 3.5,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "12.00%",
+      "alcoholVolume": 2.5,
+      "image": "images/cocktail4.jpg",
+      "storyBehind": "Rodenticide 1957 is a playful nod to Kinmen's unique charm, blending the sweetness of local delicacies with a kick."
+    },
+    {
+      "id": "V",
+      "name": "Bloody Commandos",
+      "flavorType": "Umami",
+      "ingredients": "Tomato / Black Vinegar / Chili / KKL",
+      "flavorprofile": {
+        "sour": 2,
+        "sweet": 0,
+        "bitter": 0,
+        "alcoholFeel": 3,
+        "flavorIntensity": 4
+      },
+      "alcoholContent": "11.90%",
+      "alcoholVolume": 2.5,
+      "image": "images/cocktail5.jpg",
+      "storyBehind": "Bloody Commandos brings the robust and salty flavors of the sea to life in a unique cocktail experience."
+    },
+    {
+      "id": "VI",
+      "name": "8.6 Miles Apart",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Mezcal / Rye Whiskey / Mushroom",
+      "flavorprofile": {
+        "sour": 1,
+        "sweet": 1,
+        "bitter": 0,
+        "alcoholFeel": 4,
+        "flavorIntensity": 4
+      },
+      "alcoholContent": "20.30%",
+      "alcoholVolume": 2.5,
+      "image": "images/cocktail6.jpg",
+      "storyBehind": "8.6 Miles Apart is a smoky, earthy blend inspired by the distance between Kinmen and the unknown."
+    },
+    {
+      "id": "VII",
+      "name": "Pick and Eat",
+      "flavorType": "Dessert",
+      "ingredients": "Ginger / Soy Milk / Almond",
+      "flavorprofile": {
+        "sour": 0,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 2,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "10.26%",
+      "alcoholVolume": 2,
+      "image": "images/cocktail7.jpg",
+      "storyBehind": "Pick and Eat is a cozy, comforting mix, combining familiar flavors that remind you of home."
+    },
+    {
+      "id": "VIII",
+      "name": "Letters from Nanyang",
+      "flavorType": "Bitter Sweet",
+      "ingredients": "Geow Yong Tea / Bourbon",
+      "flavorprofile": {
+        "sour": 0,
+        "sweet": 2,
+        "bitter": 2,
+        "alcoholFeel": 4,
+        "flavorIntensity": 3
+      },
+      "alcoholContent": "22.50%",
+      "alcoholVolume": 2,
+      "image": "images/cocktail8.jpg",
+      "storyBehind": "Letters from Nanyang evokes the bittersweet memories of travel, steeped in exotic tea and smooth bourbon."
+    },
+    {
+      "id": "IX",
+      "name": "Voices from Home",
+      "flavorType": "Sweet & Sour",
+      "ingredients": "Nanyang Herbal Mix / Coconut / Pineapple",
+      "flavorprofile": {
+        "sour": 4,
+        "sweet": 3,
+        "bitter": 0,
+        "alcoholFeel": 1.5,
+        "flavorIntensity": 3.5
+      },
+      "alcoholContent": "12.44%",
+      "alcoholVolume": 2,
+      "image": "images/cocktail9.jpg",
+      "storyBehind": "Voices from Home brings together tropical flavors in a drink that speaks to Kinmen’s rich culture."
+    }
+  ]
+}

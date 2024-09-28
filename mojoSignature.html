@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOJO Cocktail Bar</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Agreement Popup -->
+<div id="agreement" class="agreement-overlay">
+    <div class="agreement-modal">
+        <h2>消費同意書</h2>
+        <ol>
+            <li>未成年請勿飲酒，未成年請勿飲酒，未成年請勿飲酒</li>
+            <li>本店將查驗身分證，未成年者僅可享用無酒精飲品。</li>
+            <li>如果感到不適或想吐，請立即告知店員，我們將引領你前往“水溝神”的庇護之地！</li>
+            <li>適量為樂，過度為禍，保持理智喝到開心。</li>
+            <li>喝酒不開車，開車不喝酒，本店提供代叫計程車服務！</li>
+        </ol>
+        <button id="agreement-accept">我已同意以上注意事項</button>
+    </div>
+</div>
+
+    <!-- Header Section -->
+    <header>
+        <img src="assets/logo/logo.png" alt="MOJO Logo" class="logo-img">
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button id="lang-zh-tw">繁</button>
+            <button id="lang-zh-cn">简</button>
+            <button id="lang-en">En</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab-link active" data-lang-key="kaoliang" onclick="openTab(event, 'kaoliang-content')">高粱調酒</button>
+            <button class="tab-link" data-lang-key="memory" onclick="openTab(event, 'memory-content')">夢酒回憶</button>
+            <button class="tab-link" data-lang-key="nonAlcoholic" onclick="openTab(event, 'non-alcoholic-content')">無酒精</button>
+        </div>
+        
+
+<!-- Introduction Section 暫時先不放
+        <section id="intro-section">
+            <h2></h2>
+            <p></p>
+        </section>
+-->
+        
+        <!-- Tab Contents -->
+        <section id="kaoliang-content" class="tab-content active">
+            <!-- Kaoliang Cocktails will be populated here by JavaScript -->
+        </section>
+
+        <section id="memory-content" class="tab-content">
+            <!-- Memory Cocktails will be populated here by JavaScript -->
+        </section>
+
+        <section id="non-alcoholic-content" class="tab-content">
+            <!-- Non-Alcoholic Cocktails will be populated here by JavaScript -->
+        </section>
+
+        <!-- Error Message Section (Hidden by Default) -->
+        <section id="error-message" style="display: none; color: red; text-align: center; margin-top: 20px;"></section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-warning">
+        <img src="imgs/footer-warning.png" alt="Warning: Drink Responsibly" class="footer-warning-icon">
+    </footer>
+
+<!-- JavaScript -->
+<script src="js/agreement.js"></script>
+<script src="js/mojoSignature.js"></script>
+</body>
+</html>
