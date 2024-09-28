@@ -13,7 +13,6 @@
         <!-- Language Switcher -->
         <div class="language-switcher">
             <button id="lang-zh-tw">繁</button>
-            <button id="lang-zh-cn">简</button>
             <button id="lang-en">En</button>
         </div>
     </header>
@@ -22,15 +21,20 @@
     <main>
         <!-- Tabs Navigation -->
         <div class="tabs">
-            <button class="tab-link active" data-key="intro" onclick="openTab(event, 'intro-content')">酒單介紹</button>
-            <button class="tab-link" data-key="I" onclick="openTab(event, 'I-content')">純愛古崗</button>
-            <button class="tab-link" data-key="II" onclick="openTab(event, 'II-content')">鱟裡血</button>
-            <!-- Add more buttons for other cocktails -->
+            <button class="tab-link active" data-key="intro" onclick="openTab(event, 'intro-content')">Loading...</button>
+            <button class="tab-link" data-key="I" onclick="openTab(event, 'I-content')">Loading...</button>
+            <button class="tab-link" data-key="II" onclick="openTab(event, 'II-content')">Loading...</button>
+            <button class="tab-link" data-key="III" onclick="openTab(event, 'III-content')">Loading...</button>
+            <button class="tab-link" data-key="IV" onclick="openTab(event, 'IV-content')">Loading...</button>
+            <button class="tab-link" data-key="V" onclick="openTab(event, 'V-content')">Loading...</button>
+            <button class="tab-link" data-key="VI" onclick="openTab(event, 'VI-content')">Loading...</button>
+            <button class="tab-link" data-key="VII" onclick="openTab(event, 'VII-content')">Loading...</button>
+            <button class="tab-link" data-key="VIII" onclick="openTab(event, 'VIII-content')">Loading...</button>
+            <button class="tab-link" data-key="IX" onclick="openTab(event, 'IX-content')">Loading...</button>
         </div>
         
         <!-- Tab Contents -->
         <section id="intro-content" class="tab-content active">
-            <!-- Introduction content -->
             <h2>Welcome to MOJO Cocktail Bar</h2>
             <p>Explore our exquisite cocktail selection.</p>
         </section>
@@ -38,7 +42,18 @@
         <!-- Dynamic Content Sections for Cocktails -->
         <section id="I-content" class="tab-content"></section>
         <section id="II-content" class="tab-content"></section>
-        <!-- Add more sections for other cocktails -->
+        <section id="III-content" class="tab-content"></section>
+        <section id="IV-content" class="tab-content"></section>
+        <section id="V-content" class="tab-content"></section>
+        <section id="VI-content" class="tab-content"></section>
+        <section id="VII-content" class="tab-content"></section>
+        <section id="VIII-content" class="tab-content"></section>
+        <section id="IX-content" class="tab-content"></section>
+
+        <!-- Button to go back to the index -->
+<p style="text-align: center;">
+    <a href="index.html" class="back-button">Back to Index</a>
+  </p>
 
         <!-- Error Message Section (Hidden by Default) -->
         <section id="error-message" style="display: none; color: red; text-align: center; margin-top: 20px;"></section>
@@ -46,11 +61,10 @@
 
     <!-- Footer Section -->
     <footer class="footer-warning">
-        <img src="imgs/footer-warning.png" alt="Warning: Drink Responsibly" class="footer-warning-icon">
+        <img src="assets/footer-warning.png" alt="Warning: Drink Responsibly" class="footer-warning-icon">
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/cocktailData.js"></script> <!-- Contains the JSON data -->
-    <script src="js/main.js"></script> <!-- Main JS file to handle tab switching and data rendering -->
+    <script src="js/kinmenJourney.js"></script> <!-- Main JS file to handle tab switching and data rendering -->
 </body>
 </html>

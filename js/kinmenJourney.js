@@ -12,7 +12,9 @@ function openTab(event, contentId) {
 
   // Show the selected tab content
   document.getElementById(contentId).style.display = "block";
-  event.currentTarget.classList.add("active");
+  if (event) {
+    event.currentTarget.classList.add("active");
+  }
 }
 
 // Populate the cocktail data into their respective sections
@@ -32,12 +34,12 @@ function populateCocktailData(
   const introSection = document.getElementById("intro-content");
   if (introSection) {
     introSection.innerHTML = `
-          <h2>${introHeading}</h2>
-          <p>${introDescription}</p>
-      `;
+      <h2>${introHeading}</h2>
+      <p>${introDescription}</p>
+    `;
   }
 
-  // Update the tab labels for each cocktail
+  // Update the tab labels and content for each cocktail
   cocktails.forEach((cocktail) => {
     const tabButton = document.querySelector(
       `.tab-link[data-key="${cocktail.id}"]`
@@ -46,49 +48,50 @@ function populateCocktailData(
       tabButton.textContent = cocktail.tabLabel;
     }
 
-    // Populate the cocktail content
     const section = document.getElementById(`${cocktail.id}-content`);
     if (section) {
       section.innerHTML = `
-              <h2>${cocktail.name}</h2>
-              <img src="${cocktail.image}" alt="${cocktail.name}" class="cocktail-img">
-              <p><strong>Flavor Type:</strong> ${cocktail.flavorType}</p>
-              <p><strong>Ingredients:</strong> ${cocktail.ingredients}</p>
-              <p><strong>Alcohol Content:</strong> ${cocktail.alcoholContent}</p>
-              <p><strong>Story Behind:</strong> ${cocktail.storyBehind}</p>
+      <div class="cocktail-container">
+        <div class="cocktail-content">
+          <h2 class="cocktail-name">${cocktail.name}</h2>
+          <p class="cocktail-flavorType">${cocktail.flavorType}</p>
+          <p class="cocktail-ingredients">${cocktail.ingredients}</p>
+        </div>
+        <div class="cocktail-story">
+         <h2 class="story-heading">${cocktail.storyHeading}</h2>
+          <p>${cocktail.storyBehind}</p>
+        </div>
+      </div>
           `;
     }
   });
 }
 
 // Fetch JSON data from the specified file
-function loadCocktailData(languageCode = "en") {
+async function loadCocktailData(languageCode = "zh_TW") {
   const jsonFilePath = `data/${languageCode}/cocktailData_${languageCode}.json`;
-  console.log(`Fetching data from: ${jsonFilePath}`); // Log the file path for debugging
 
-  fetch(jsonFilePath)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok: " + response.statusText);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log("Data fetched successfully:", data); // Log the fetched data for debugging
-      populateCocktailData(
-        data.cocktails,
-        data.introTabLabel,
-        data.introHeading,
-        data.introDescription
-      );
-      openTab(event, "intro-content"); // Open the introduction tab by default
-    })
-    .catch((error) => {
-      console.error("Error fetching the cocktail data:", error);
-      document.getElementById("error-message").textContent =
-        "Failed to load cocktail data.";
-      document.getElementById("error-message").style.display = "block";
-    });
+  try {
+    document.getElementById("intro-content").innerHTML = "<p>Loading...</p>";
+    const response = await fetch(jsonFilePath);
+    if (!response.ok) {
+      throw new Error("Network response was not ok: " + response.statusText);
+    }
+
+    const data = await response.json();
+    populateCocktailData(
+      data.cocktails,
+      data.introTabLabel,
+      data.introHeading,
+      data.introDescription
+    );
+    openTab(null, "intro-content");
+  } catch (error) {
+    console.error("Error fetching the cocktail data:", error);
+    document.getElementById("error-message").textContent =
+      "Failed to load cocktail data.";
+    document.getElementById("error-message").style.display = "block";
+  }
 }
 
 // Initialize the page content
@@ -99,9 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .getElementById("lang-zh-tw")
     .addEventListener("click", () => loadCocktailData("zh_TW"));
-  document
-    .getElementById("lang-zh-cn")
-    .addEventListener("click", () => loadCocktailData("zh_CN"));
   document
     .getElementById("lang-en")
     .addEventListener("click", () => loadCocktailData("en"));

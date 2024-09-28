@@ -1,14 +1,14 @@
 {
-  "introTabLabel": "酒單介紹tw",
-  "introHeading": "歡迎來到 MOJO 調酒吧",
-  "introDescription": "探索我們精緻的調酒選擇。",
+  "introTabLabel": "酒單介紹",
+  "introHeading": "歡迎來到夢酒館 MOJO",
+  "introDescription": "歡迎來到夢酒館，打開金門的夜晚！這份酒單的每一杯酒，背後都藏著一段金門的故事，並配有一張故事明信片。選擇您喜愛的調酒後，我們會送上對應的明信片，您可以在上面留言給朋友，或寫些文字送給自己。寫完之後，請將明信片交給我們，我們會在每週一下午為您寄出。來到夢酒館不只是喝酒，更是一段文化旅程的開始。現在，請翻開下一頁，讓我們一起來段難忘的金門之旅吧！",
   "cocktails": [
     {
       "id": "I",
-      "name": "純愛古崗zh",
-      "tabLabel": "I",
-      "flavorType": "Sweet & Sour",
-      "ingredients": "Marigold / Jasmine Tea / Honey",
+      "name": "純愛古崗",
+      "tabLabel": "純愛古崗",
+      "flavorType": "酸甜",
+      "ingredients": "萬壽菊/ 茉莉綠茶/ 蜂蜜",
       "flavorprofile": {
         "sour": 3,
         "sweet": 3,
@@ -18,15 +18,15 @@
       },
       "alcoholContent": "11.97%",
       "alcoholVolume": 2.5,
-      "image": "images/cocktail1.jpg",
-      "storyBehind": "A refreshing blend inspired by the golden fields of Kinmen. Pure Love K.K. captures the essence of local flavors."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "金門的古崗村有座風光明媚的古崗湖，位於青山環抱中，總是波光粼粼。據說古崗湖過去也是金門青年男女的幽會聖地。有一篇介紹古崗湖風景的舊報紙還說：「假如是皎潔的月夜，帶著你的女友，到古崗湖去划船，即使不說綿綿的情話，也會有『盡在不言中』和『心有靈犀一點通』的感應的」。金門的文學作品裡，也經常有男女主角因古崗湖秀麗的風情而滋生愛意的情節。"
     },
     {
       "id": "II",
-      "name": "Holy Shit!",
-      "tabLabel": "II",
-      "flavorType": "Sweet & Sour",
-      "ingredients": "Smoke / Gentian / Cinnamon / Egg white",
+      "name": "鱟裡血",
+      "tabLabel": "鱟裡血",
+      "flavorType": "酸甜",
+      "ingredients": "煙燻/ 龍膽/ 肉桂/ 蛋白",
       "flavorprofile": {
         "sour": 4,
         "sweet": 3,
@@ -36,15 +36,15 @@
       },
       "alcoholContent": "12.36%",
       "alcoholVolume": 2,
-      "image": "images/cocktail2.jpg",
-      "storyBehind": "Inspired by the bold flavors and mysterious aura of Kinmen's rich history."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "相傳明朝時，金門有個姓張的太監，而對岸的圍頭則出了個皇后。皇帝賜給皇后娘家一座宮殿式的祖厝，但這座祖厝建在當地的「鱟魚穴」上，使得鱟魚一直呼呼的喘氣，由於他的鼻孔正對著金門，於是當地飛沙走石，無法住人。張太監認為，只需拆去祖厝的三塊瓦片，讓鱟魚稍微喘氣，就能解決問題。然而，身為太監的他無法挑戰皇后，直到有次皇帝出遊，讓他掌權七日，他便下旨拆了瓦片，金門風沙才安定下來，變得適宜居住。"
     },
     {
       "id": "III",
-      "name": "Runaway Peacock",
-      "tabLabel": "III",
-      "flavorType": "Sweet & Sour",
-      "ingredients": "Grape / Rosemary / Mastiha",
+      "name": "小鳳出逃",
+      "tabLabel": "小鳳出逃",
+      "flavorType": "酸甜",
+      "ingredients": "葡萄/ 迷迭香/ 洋乳香",
       "flavorprofile": {
         "sour": 3,
         "sweet": 4,
@@ -54,15 +54,15 @@
       },
       "alcoholContent": "9.48%",
       "alcoholVolume": 1.5,
-      "image": "images/cocktail3.jpg",
-      "storyBehind": "Runaway Peacock captures the vibrant essence of Kinmen's flora, offering a blend of fruity and herbal notes."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "1999年，丹恩颱風席捲金門，導致十幾隻圈養的孔雀從毀壞的圍籬中逃跑。幾年後，金門出現了野生孔雀家族。最初，人們歡迎這些孔雀，並將牠們暱稱為「小鳳」，認為牠們會帶來好運。然而，由於金門缺乏天敵，孔雀數量迅速增長，隨處可見的廢棄軍營也成為牠們的棲息地。如今，孔雀已遍佈金門，人們開始擔憂牠們的影響。為控制數量，金門縣政府推出孔雀通緝令，捉捕一隻可獲600元獎勵金。"
     },
     {
       "id": "IV",
-      "name": "Rodenticide 1957",
-      "tabLabel": "IV",
-      "flavorType": "Dessert",
-      "ingredients": "Cocoa / Taro / Milk / Peanut Candy",
+      "name": "毒鼠靈",
+      "tabLabel": "毒鼠靈",
+      "flavorType": "甜點",
+      "ingredients": "可可/ 芋頭/ 牛奶/ 貢糖",
       "flavorprofile": {
         "sour": 0,
         "sweet": 4,
@@ -72,15 +72,15 @@
       },
       "alcoholContent": "12.00%",
       "alcoholVolume": 2.5,
-      "image": "images/cocktail4.jpg",
-      "storyBehind": "Rodenticide 1957 is a playful nod to Kinmen's unique charm, blending the sweetness of local delicacies with a kick."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "1940至1950年代，金門多次爆發鼠疫。國軍進駐後，為防疫病影響士氣，成立「鼠疫防治處」，專責防疫政策。除了定期為軍民接種疫苗和噴灑消毒劑外，1957年還引進了當時最新的毒鼠靈，主要成分磷化鋅是一種灰黑色粉末，混入蒸熟的芋頭引誘老鼠食用。儘管軍方強力防疫成功杜絕鼠疫爆發，防疫措施成為軍事動員的一部分，經常帶來額外的負擔，例如，居民須定期上繳老鼠尾巴作為滅鼠運動的成果統計。"
     },
     {
       "id": "V",
-      "name": "Bloody Commandos",
-      "tabLabel": "V",
-      "flavorType": "Umami",
-      "ingredients": "Tomato / Black Vinegar / Chili / KKL",
+      "name": "水鬼上岸",
+      "tabLabel": "水鬼上岸",
+      "flavorType": "鹹鮮",
+      "ingredients": "番茄/ 烏醋/ 辣椒/ 高粱酒",
       "flavorprofile": {
         "sour": 2,
         "sweet": 0,
@@ -90,15 +90,15 @@
       },
       "alcoholContent": "11.90%",
       "alcoholVolume": 2.5,
-      "image": "images/cocktail5.jpg",
-      "storyBehind": "Bloody Commandos brings the robust and salty flavors of the sea to life in a unique cocktail experience."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "金門距離對岸很近，水鬼潛伏上岸偵察並不罕見。據傳，某座海防據點的衛兵打瞌睡，未發現敵軍水鬼滲透，導致全連官兵被割喉。事後，軍方封閉營區，但居民夜裡仍聽見操練聲。好奇的居民進入營區，發現有無頭士兵在操演。這看似無根據的傳說，為何會廣為流傳呢？可能源於金門前線的高壓狀態。在仍有燈火管制的金門，夜裡黑暗籠罩，衛兵聽見海浪聲卻看不見任何東西，容易陷入恐懼，或許這就是水鬼傳說盛行的原因。"
     },
     {
       "id": "VI",
-      "name": "8.6 Miles Apart",
-      "tabLabel": "VI",
-      "flavorType": "Sweet & Sour",
-      "ingredients": "Mezcal / Rye Whiskey / Mushroom",
+      "name": "八六海哩",
+      "tabLabel": "八六海哩",
+      "flavorType": "酸甜",
+      "ingredients": "梅茲卡爾/ 裸麥威士忌/ 鈕扣菇",
       "flavorprofile": {
         "sour": 1,
         "sweet": 1,
@@ -108,15 +108,15 @@
       },
       "alcoholContent": "20.30%",
       "alcoholVolume": 2.5,
-      "image": "images/cocktail6.jpg",
-      "storyBehind": "8.6 Miles Apart is a smoky, earthy blend inspired by the distance between Kinmen and the unknown."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "美國禁酒令時期，人們為了喝酒，會到3海哩領海外，逃避追查，促使司法機關將執法範圍擴展至12海哩。然而，1958年第一次聯合國海洋法會議時，並未就領海寬度達成共識。同年，金門爆發八二三砲戰，北京宣布中國的領海範圍為12海哩，禁止外國船艦無故進入，針對當時護航國軍運補船團的美國軍艦。金門與廈門的小三通碼頭距離約8.6海哩，恰於3至12海哩之間，如今成為兩地交流的重要通道，象徵兩岸問題在金門的複雜性。"
     },
     {
       "id": "VII",
-      "name": "Pick and Eat",
-      "tabLabel": "VII",
-      "flavorType": "Dessert",
-      "ingredients": "Ginger / Soy Milk / Almond",
+      "name": "隨撿隨吃",
+      "tabLabel": "隨撿隨吃",
+      "flavorType": "甜點",
+      "ingredients": "薑/ 豆漿/ 杏仁",
       "flavorprofile": {
         "sour": 0,
         "sweet": 3,
@@ -126,15 +126,15 @@
       },
       "alcoholContent": "10.26%",
       "alcoholVolume": 2,
-      "image": "images/cocktail7.jpg",
-      "storyBehind": "Pick and Eat is a cozy, comforting mix, combining familiar flavors that remind you of home."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "金門曾是心理作戰的重地，施放「空飄氣球」是其中一種策略。這些氣球不僅運送傳單，大型氣球還能載運物資，如口糧、罐頭、藥物和香菸等。有一段時間，救濟口糧外包裝上還寫著「隨撿隨吃」的字樣，如今看來頗具趣味。施放空飄氣球的時間常配合賓客訪問或節日，如中秋節時施放月餅氣球，基督教人士來訪時施放「聖經氣球」。因此，氣球運送的物資和施放的過程本身，都成為充滿儀式感的政治宣傳。"
     },
     {
       "id": "VIII",
-      "name": "Letters from Nanyang",
-      "tabLabel": "VIII",
-      "flavorType": "Bitter Sweet",
-      "ingredients": "Geow Yong Tea / Bourbon",
+      "name": "南洋家書",
+      "tabLabel": "南洋家書",
+      "flavorType": "苦甜",
+      "ingredients": "嶢陽茶/ 波本威士忌",
       "flavorprofile": {
         "sour": 0,
         "sweet": 2,
@@ -144,15 +144,15 @@
       },
       "alcoholContent": "22.50%",
       "alcoholVolume": 2,
-      "image": "images/cocktail8.jpg",
-      "storyBehind": "Letters from Nanyang evokes the bittersweet memories of travel, steeped in exotic tea and smooth bourbon."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "金門過去生活條件艱苦，許多年輕人不得不赴東南亞等地工作，稱為「出洋」或「下南洋」。出洋者被稱為「番客」，他們將在海外的所得與家書一同匯回家鄉，這些「僑批」是無數金門家庭的「救命錢」，也是分隔兩地家庭的唯一聯繫。據說返鄉的番客經過香港時，常購買香港火車牌的「嶢陽茶」作為伴手禮，這款茶也成為金門茶店「茶桌仔」的流行茶品。儘管少數人能成功致富，大部分人在外奮鬥一生，有些終老異鄉，無法回到金門。"
     },
     {
       "id": "IX",
-      "name": "Voices from Home",
-      "tabLabel": "IX",
-      "flavorType": "Sweet & Sour",
-      "ingredients": "Nanyang Herbal Mix / Coconut / Pineapple",
+      "name": "浯聲通訊",
+      "tabLabel": "浯聲通訊",
+      "flavorType": "酸甜",
+      "ingredients": "南洋草本/ 椰子/ 鳳梨",
       "flavorprofile": {
         "sour": 4,
         "sweet": 3,
@@ -162,8 +162,8 @@
       },
       "alcoholContent": "12.44%",
       "alcoholVolume": 2,
-      "image": "images/cocktail9.jpg",
-      "storyBehind": "Voices from Home brings together tropical flavors in a drink that speaks to Kinmen’s rich culture."
+      "storyHeading": "調酒故事：",
+      "storyBehind": "金門過去生活條件非常艱苦，許多年輕人不得不遠赴東南亞等地工作，稱為「出洋」或「下南洋」。一些人在海外長年打拼，無法賺夠錢回到金門，導致他們與故鄉的聯繫逐漸斷裂。為了維繫這些「番客」與家鄉的連結，當時金門出現了一種名為「僑刊」的刊物，專門刊載親友通訊和鄉里新聞，寄到南洋。想像一下，當他們在異鄉收到僑刊，讀到家鄉的最新消息時，心中一定會充滿激動和思念吧！"
     }
   ]
 }
